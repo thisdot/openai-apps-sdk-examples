@@ -26,6 +26,17 @@ const targets: string[] = [
   "mixed-auth-past-orders",
   "kitchen-sink-lite",
   "shopping-cart",
+  "show-tool-result",
+  "send-message",
+  "update-model-context",
+  "call-server-tool",
+  "host-theming",
+  "open-link",
+  "request-display-mode",
+  "streaming-tool-input",
+  "get-host-capabilities",
+  "get-host-context",
+  "get-host-version",
 ];
 const builtNames: string[] = [];
 
