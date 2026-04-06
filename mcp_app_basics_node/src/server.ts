@@ -133,7 +133,6 @@ function createServer(): McpServer {
       const resolvedName = name ?? "World";
       const timestamp = new Date().toISOString();
       return {
-        _meta: { "openai/outputTemplate": SHOW_TOOL_RESULT_URI },
         content: [
           {
             type: "text" as const,
@@ -252,7 +251,6 @@ function createServer(): McpServer {
     },
     async () => {
       return {
-        _meta: { "openai/outputTemplate": SEND_MESSAGE_URI },
         content: [
           {
             type: "text" as const,
@@ -347,7 +345,6 @@ function createServer(): McpServer {
     },
     async () => {
       return {
-        _meta: { "openai/outputTemplate": UPDATE_MODEL_CONTEXT_URI },
         content: [
           {
             type: "text" as const,
@@ -444,7 +441,6 @@ function createServer(): McpServer {
     },
     async () => {
       return {
-        _meta: { "openai/outputTemplate": CALL_SERVER_TOOL_URI },
         content: [
           {
             type: "text" as const,
@@ -578,7 +574,6 @@ function createServer(): McpServer {
     },
     async () => {
       return {
-        _meta: { "openai/outputTemplate": HOST_THEMING_URI },
         content: [
           {
             type: "text" as const,
@@ -779,7 +774,6 @@ function createServer(): McpServer {
     },
     async () => {
       return {
-        _meta: { "openai/outputTemplate": OPEN_LINK_URI },
         content: [
           {
             type: "text" as const,
@@ -896,7 +890,6 @@ function createServer(): McpServer {
     },
     async () => {
       return {
-        _meta: { "openai/outputTemplate": REQUEST_DISPLAY_MODE_URI },
         content: [
           {
             type: "text" as const,
@@ -1049,7 +1042,6 @@ function createServer(): McpServer {
     },
     async ({ title, author }) => {
       return {
-        _meta: { "openai/outputTemplate": STREAMING_TOOL_INPUT_URI },
         content: [
           {
             type: "text" as const,
@@ -1183,7 +1175,6 @@ function createServer(): McpServer {
     },
     async () => {
       return {
-        _meta: { "openai/outputTemplate": GET_HOST_CAPABILITIES_URI },
         content: [
           {
             type: "text" as const,
@@ -1301,7 +1292,6 @@ function createServer(): McpServer {
     },
     async () => {
       return {
-        _meta: { "openai/outputTemplate": GET_HOST_CONTEXT_URI },
         content: [
           {
             type: "text" as const,
@@ -1409,7 +1399,6 @@ function createServer(): McpServer {
     },
     async () => {
       return {
-        _meta: { "openai/outputTemplate": GET_HOST_VERSION_URI },
         content: [
           {
             type: "text" as const,
